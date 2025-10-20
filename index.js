@@ -122,6 +122,6 @@ app.delete("/users/:id", (req, res) => {
 
 // Jalankan server di port 3000
 const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server berjalan di http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server berjalan di http://0.0.0.0:${PORT}`);
 });
